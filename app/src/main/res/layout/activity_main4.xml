@@ -1,0 +1,328 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2A06E"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/bg1" />
+
+        <ImageView
+            android:id="@+id/icon_profile"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="18dp"
+            android:src="@drawable/profile"
+            android:layout_alignParentStart="true"
+            />
+
+        <ImageView
+            android:id="@+id/icon_help"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="18dp"
+            android:src="@drawable/help"
+            android:layout_alignParentEnd="true"
+            />
+    </RelativeLayout>
+
+    <!-- TabLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="-13dp"
+        android:background="@drawable/searchbar"
+        android:clipToPadding="true"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/search" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppinregular"
+            android:gravity="center"
+            android:hint="Want to Tr!p?"
+            android:textColorHint="#808080"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/culinary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/coolvetica"
+            android:textColor="@color/black"
+            android:text="Culinary"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/clothing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/coolvetica"
+            android:textColor="@color/black"
+            android:text="Clothing"
+            android:textSize="18dp"
+            android:layout_marginStart="16dp" />
+
+        <TextView
+            android:id="@+id/hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/coolvetica"
+            android:textColor="@color/black"
+            android:text="Hotel"
+            android:textSize="18dp"
+            android:layout_marginStart="16dp" />
+
+        <TextView
+            android:id="@+id/transport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/coolvetica"
+            android:textColor="@color/black"
+            android:text="Transport"
+            android:textSize="18dp"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Example Item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bgmenu"
+                android:elevation="4dp"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_marginHorizontal="10dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/btc"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Beteng Trade Center"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.6 ★★★★★"
+                        android:textColor="#F9A825"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jl. Mayor Sunaryo, Kedung Lumbu, Kec. Ps. Kliwon, Kota Surakarta, Jawa Tengah 57133"
+                        android:textColor="#808080"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/buttonClothing1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/poppinregular"
+                        android:text="Lihat"
+                        android:textColor="@color/white"
+                        android:textSize="11dp"
+                        android:backgroundTint="@color/black">
+                    </Button>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bgmenu"
+                android:elevation="4dp"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_marginHorizontal="10dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/klewer" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pasar Klewer"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5 ★★★★★"
+                        android:textColor="#F9A825"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jl. DR. Radjiman No.5A, Gajahan, Kec. Ps. Kliwon, Kota Surakarta, Jawa Tengah 57133"
+                        android:textColor="#808080"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/poppinregular"
+                        android:text="Lihat"
+                        android:textColor="@color/white"
+                        android:textSize="11dp"
+                        android:backgroundTint="@color/black">
+                    </Button>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bgmenu"
+                android:elevation="4dp"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_marginHorizontal="10dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/matahari" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Matahari Singosaren"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.4 ★★★★★"
+                        android:textColor="#F9A825"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jl. Gatot Subroto No.27 - 28, Kemlayan, Kec. Serengan, Kota Surakarta, Jawa Tengah 57152"
+                        android:textColor="#808080"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/poppinregular"
+                        android:text="Lihat"
+                        android:textColor="@color/white"
+                        android:textSize="11dp"
+                        android:backgroundTint="@color/black">
+                    </Button>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/wantMoreButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="#FFE0B2"
+        android:elevation="4dp"
+        android:text="Want More?"
+        android:textColor="#000" />
+
+</LinearLayout>

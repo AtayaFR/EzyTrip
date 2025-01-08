@@ -1,0 +1,395 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2A06E"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/bg1" />
+
+        <ImageView
+            android:id="@+id/icon_profile"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="18dp"
+            android:src="@drawable/profile"
+            android:layout_alignParentStart="true"
+            />
+
+        <ImageView
+            android:id="@+id/icon_help"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="18dp"
+            android:src="@drawable/help"
+            android:layout_alignParentEnd="true"
+            />
+    </RelativeLayout>
+
+    <!-- TabLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="-13dp"
+        android:background="@drawable/searchbar"
+        android:clipToPadding="true"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/search" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppinregular"
+            android:gravity="center"
+            android:hint="Want to Tr!p?"
+            android:textColorHint="#808080"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/culinary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/coolvetica"
+            android:textColor="@color/black"
+            android:text="Culinary"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/clothing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/coolvetica"
+            android:textColor="@color/black"
+            android:text="Clothing"
+            android:textSize="18dp"
+            android:layout_marginStart="16dp" />
+
+        <TextView
+            android:id="@+id/hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/coolvetica"
+            android:textColor="@color/black"
+            android:text="Hotel"
+            android:textSize="18dp"
+            android:layout_marginStart="16dp" />
+
+        <TextView
+            android:id="@+id/transport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/coolvetica"
+            android:textColor="@color/black"
+            android:text="Transport"
+            android:textSize="18dp"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Example Item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bgmenu"
+                android:elevation="4dp"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_marginHorizontal="10dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/sate"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sate Kambing-Buntel Pak H.Kasdi"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.5 ★★★★★"
+                        android:textColor="#F9A825"
+                        android:textSize="14sp" />
+
+                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jl. Monginsidi No.107, Kestalan, Kec.Banjarsari, Kota Surakarta, Jawa Tengah 57133"
+                    android:textColor="#808080"
+                    android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/buttonLihat1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/poppinregular"
+                        android:text="Lihat"
+                        android:textColor="@color/white"
+                        android:textSize="11dp"
+                        android:backgroundTint="@color/black">
+                    </Button>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bgmenu"
+                android:elevation="4dp"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_marginHorizontal="10dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/spsambal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Waroeng Spesial Sambal &quot;SS&quot; Kerten"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.5 ★★★★★"
+                        android:textColor="#F9A825"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jl. Bimbing, No.5, Kerten, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57146"
+                        android:textColor="#808080"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/poppinregular"
+                        android:text="Lihat"
+                        android:textColor="@color/white"
+                        android:textSize="11dp"
+                        android:backgroundTint="@color/black">
+                    </Button>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bgmenu"
+                android:elevation="4dp"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_marginHorizontal="10dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/selat" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selat Solo Tenda Biru - Dr.Wahidin"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.6 ★★★★★"
+                        android:textColor="#F9A825"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jl. Dr. Wahidin No.26, Purwosari, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57142"
+                        android:textColor="#808080"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/poppinregular"
+                        android:text="Lihat"
+                        android:textColor="@color/white"
+                        android:textSize="11dp"
+                        android:backgroundTint="@color/black">
+                    </Button>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bgmenu"
+                android:elevation="4dp"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_marginHorizontal="10dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/balekambang" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Balekambang Resto"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.4 ★★★★★"
+                        android:textColor="#F9A825"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jl. Balekambang No.7, Manahan, Kec. Banjarsari, Kota Surakarta 57139"
+                        android:textColor="#808080"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/poppinregular"
+                        android:text="Lihat"
+                        android:textColor="@color/white"
+                        android:textSize="11dp"
+                        android:backgroundTint="@color/black">
+                    </Button>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+            <!-- Add more items here -->
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/wantMoreButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="#FFE0B2"
+        android:elevation="4dp"
+        android:text="Want More?"
+        android:textColor="#000" />
+
+</LinearLayout>
